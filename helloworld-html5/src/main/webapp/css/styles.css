@@ -17,3 +17,11 @@
 .invalid {
     color: red;
 }
+
+#resultBox {
+    margin: 20px;
+    font-size: 39px;
+    text-align: center;
+}
+
+

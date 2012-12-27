@@ -26,7 +26,7 @@ public class MemberRepository {
         // using Hibernate Session and Criteria Query via Hibernate Native API
         Session session = (Session) em.getDelegate();
         Criteria cb = session.createCriteria(Member.class);
-        cb.addOrder(Order.asc("name"));
+        cb.addOrder(Order.asc("address"));
         return (List<Member>) cb.list();
         // return members;
     }

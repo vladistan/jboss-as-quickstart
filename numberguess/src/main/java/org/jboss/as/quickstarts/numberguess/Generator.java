@@ -47,7 +47,7 @@ public class Generator implements Serializable {
 
    private java.util.Random random = new java.util.Random(System.currentTimeMillis());
 
-   private int maxNumber = 100;
+   private int maxNumber = 1000;
 
    java.util.Random getRandom() {
       return random;
@@ -58,6 +58,7 @@ public class Generator implements Serializable {
    int next() {
       // a number between 1 and 100
       return getRandom().nextInt(maxNumber - 1) + 1;
+
    }
 
    @Produces

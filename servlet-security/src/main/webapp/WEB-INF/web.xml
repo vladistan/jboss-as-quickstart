@@ -15,8 +15,12 @@
 
    <!-- Configure login to be HTTP Basic -->
    <login-config>
-      <auth-method>BASIC</auth-method>
+      <auth-method>FORM</auth-method>
       <realm-name>RealmUsersRoles</realm-name>
+       <form-login-config>
+           <form-login-page>/login.html</form-login-page>
+           <form-error-page>/loginError.html</form-error-page>
+       </form-login-config>
    </login-config>
 </web-app>
 
